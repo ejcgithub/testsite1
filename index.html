@@ -20,12 +20,17 @@
     <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet">
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/c370f34088.js" crossorigin="anonymous"></script>
     <!-- Style Sheet -->
     <link href="corporate-agency/css/navigation.css" rel="stylesheet">
     <link href="corporate-agency/css/line-awesome.min.css" rel="stylesheet">
+    <!----START SLIDER--->
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
     <link href="corporate-agency/css/style.css" rel="stylesheet">
+    <style>
+        .custom-img {
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90">
@@ -50,10 +55,10 @@
             <div class="collapse navbar-collapse" id="megaone">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-link scroll line" href="#slider-section">Home</a>
-                    <a class="nav-link scroll line" href="#solution">Our Unique Solutions</a>
-                    <a class="nav-link scroll line" href="#aboutus">About Us</a>
-                    <a class="nav-link scroll line" href="#clients">Our Satisfied Clients</a>
-                    <a class="nav-link scroll line" href="#FAQ">FAQ</a>
+                    <a class="nav-link scroll line" href="#about">About Us</a>
+                    <a class="nav-link scroll line" href="#portfolio">Our Work</a>
+                    <a class="nav-link scroll line" href="#pricing">Pricing Plans</a>
+                    <a class="nav-link scroll line" href="#blog">Blog</a>
                     <a href="" class="btn btn-large btn-rounded btn-pink nav-button" data-animation-duration="500" data-fancybox data-src="#animatedModal">Contact Us</a>
                 </div>
             </div>
@@ -91,16 +96,16 @@
                         <a class="nav-link scroll" href="#slider-section">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#solutions">Our Unique Solutions</a>
+                        <a class="nav-link scroll" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#aboutus">About Us</a>
+                        <a class="nav-link scroll" href="#portfolio">Our Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#clients">Satisfied Clients</a>
+                        <a class="nav-link scroll" href="#pricing">Pricing Plans</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#FAQ">FAQ</a>
+                        <a class="nav-link scroll" href="#blog">Blog</a>
                     </li>
                     <li class="get-started-btn">
                         <a href="" class="btn btn-medium btn-rounded btn-pink d-lg-none" data-animation-duration="500" data-fancybox data-src="#animatedModal">Get Started</a>
@@ -114,7 +119,7 @@
                     <li><a class="social-icon wow fadeInUp" href="javascript:void(0)" data-wow-delay="500ms"><i class="fab fa-instagram"></i> </a> </li>
                     <li><a class="social-icon wow fadeInRight" href="javascript:void(0)" data-wow-delay="300ms"><i class="fab fa-twitter"></i> </a> </li>
                 </ul>
-                <p>&copy; 2020 JLM Mortgage Solutions. Made With Love by Sojast Design</p>
+                <p>&copy; 2020 JLM Mortgage Solutions. Made With Love by Practical Web Design</p>
             </div>
         </div>
     </div>
@@ -126,7 +131,7 @@
         <!--Heading-->
         <div class="pb-md-5 p-0 text-center">
             <span class="text-pink font-weight-200 font-20">JLM Mortgage Solution</span>
-            <h2 class="main-font font-weight-600 text-white mt-2">Let me help you with <span class="text-pink js-rotating">debt consolidation,new purchase, refinancing, renovation financing</span></h2>
+            <h2 class="main-font font-weight-600 text-white mt-2">Let me help you with <span class="text-pink js-rotating">debt consolidation, refinancing, new mortgage</span></h2>
         </div>
         <!--Contact Form-->
         <form class="contact-form" id="modal-contact-form-data">
@@ -447,7 +452,51 @@
 
 <!-- START ABOUT US -->
 <!-- START BLOG -->
-<section class="half-section p-0 blog blog-bg" id="">
+
+<section class="half-section p-0 blog blog-bg" id="blog">
+<!-- <div class="container-fluid">
+<div class="col-lg-3 col-md-12">
+  <div id="slider" class="beer-slider" data-beer-label="before">
+  <img src="corporate-agency/images/blog-img1.png" alt="first">
+  <div class="beer-reveal" data-beer-label="after">
+    <img src="corporate-agency/images/blog-img2.png" alt="after">
+  </div>
+</div>
+</div> -->
+
+
+<h2 class="d-none">heading</h2>
+<div class="container-fluid">
+        <div class="row align-items-center blog-bg">           
+          <div class="col-lg-6 col-md-12 p-0">
+                <div class="align-items-center pc-0 px-md-5 skill-box">
+                    <div class="main-title mb-5 text-center text-lg-left wow fadeIn" data-wow-delay="300ms">
+                        <p class="text-pink font-weight-200 font-20">News & Blogs</p>
+                        <h1 class="main-font font-weight-600 text-white margin-top">Your Design Guide</h1>
+                        <p class="font-15 alt-font font-weight-normal text-grey margin-top">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut
+                            aliquip.</p>
+                        <a href="corporate-agency/blog.html" class="mt-3 btn btn-medium btn-rounded btn-pink">Read
+                            Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 p-0 ">
+                <div id="slider" class="beer-slider d-flex flex-grow-1" data-beer-start="20" data-beer-label="before">
+                  <img src="corporate-agency/images/blog-img1.png" class="custom-img" alt="first">
+                        <div class="beer-reveal" data-beer-label="after">
+                          <img src="corporate-agency/images/blog-img2.png" class="custom-img" alt="after">
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>    
+
+
+
     <h2 class="d-none">heading</h2>
     <div class="container-fluid">
         <div class="row align-items-center blog-bg">
@@ -473,49 +522,6 @@
                     </div> -->
                 </div>
             </div>
-
-            <div class="col-lg-6 col-md-12">
-                <div class="align-items-center pc-0 px-md-5 skill-box">
-                    <div class="main-title mb-5 text-center text-lg-left wow fadeIn" data-wow-delay="300ms">
-                        <p class="text-pink font-weight-200 font-20">News & Blogs</p>
-                        <h1 class="main-font font-weight-600 text-white margin-top">Your Design Guide</h1>
-                        <p class="font-15 alt-font font-weight-normal text-grey margin-top">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut
-                            aliquip.</p>
-                        <a href="corporate-agency/blog.html" class="mt-3 btn btn-medium btn-rounded btn-pink">Read
-                            Blog</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h2 class="d-none">heading</h2>
-    <div class="container-fluid">
-        <div class="row align-items-center blog-bg">
-            <div class="col-lg-6 col-md-12 p-0 order-1 order-md-2">
-                <div class="owl-carousel owl-theme owl-split">
-                    <!-- Team-1 -->
-                    <div class="item">
-                        <div class="hover-effect">
-                            <img alt="blog" src="corporate-agency/images/rent.png" class="team-img">
-                        </div>
-                    </div>
-                    <!-- Team-2 -->
-                    <div class="item">
-                        <div class="hover-effect">
-                            <img alt="blog" src="corporate-agency/images/sold.png" class="team-img">
-                        </div>
-                    </div>
-                    <!-- Team-3 -->
-                    <!-- <div class="item">
-                        <div class="hover-effect">
-                            <img alt="blog" src="corporate-agency/images/blog-img3.jpg" class="team-img">
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-    
             <div class="col-lg-6 col-md-12">
                 <div class="align-items-center pc-0 px-md-5 skill-box">
                     <div class="main-title mb-5 text-center text-lg-left wow fadeIn" data-wow-delay="300ms">
@@ -533,9 +539,60 @@
         </div>
     </div>
 </section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="300ms">
+                <p class="text-pink font-weight-200 font-20">Basic Info about company</p>
+                <h1 class="main-font font-weight-600 text-white">Corporate Design<span>and Media Agency</span> <span> in NewYork</span></h1>
+            </div>
+
+            <div class="col-12 col-lg-6 m-ipad wow fadeInRight" data-wow-delay="300ms">
+                <div class="ml-md-4 pl-md-2 font-weight-200 text-grey font-18">
+                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+                </div>
+            </div>
+        </div>
+        <!-- About Boxes -->
+        <div class="row about-margin">
+            <!-- First Box -->
+            <div class="col-md-4 col-sm-12">
+                <div class="about-box center-block bg-green wow zoomIn" data-wow-delay="400ms">
+                    <div class="about-main-icon pb-4">
+                        <i class="fa fa-lightbulb" aria-hidden="true"></i>
+                    </div>
+                    <h5>We have some investment<span> ideas for you.</span></h5>
+                </div>
+            </div>
+            <!-- Second Box -->
+            <div class="col-md-4 col-sm-12">
+                <div class="about-box center-block bg-blue wow zoomIn" data-wow-delay="500ms">
+                    <div class="about-main-icon pb-4">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <h5>Your business is our <span>top priority.</span></h5>
+                </div>
+            </div>
+            <!-- Third Box -->
+            <div class="col-md-4 col-sm-12">
+                <div class="about-box center-block bg-green wow zoomIn" data-wow-delay="600ms">
+                    <div class="about-main-icon pb-4">
+                        <i class="fa fa-grin-hearts" aria-hidden="true"></i>
+                    </div>
+                    <h5>We love our valued <span> customers.</span></h5>
+                </div>
+            </div>
+        </div>
+        <!-- About Image -->
+        <!-- <div class="d-flex justify-content-center wow bounceInLeft" data-wow-delay="300ms">
+            <img src="corporate-agency/images/about-img.png" alt="About-Us">
+        </div> -->
+    </div>
+</section>
 <!-- END ABOUT US -->
 <!-- START PRICE -->
-<section id="solution" class="pricing">
+<section id="pricing" class="pricing">
     <div class="container">
         <div class="row wow fadeInUp" data-wow-delay="100ms">
             <div class="col-12 text-center">
@@ -613,108 +670,35 @@
             </div>
         </div>
     </div>
-<!-- Amortization Calculator Widget START -->
-<script src="https://usmortgagecalculator.org/widget/2.0/js/amortizationcalc-loader.min.js"
-    type="text/javascript" ></script>
-<div id="acww-widgetwrapper #calc" style="min-width:250px;width:100%;">
-    <div id="acww-widget" style="position:relative;padding-top:0;padding-bottom:280px;height:0;overflow:hidden;"></div>
-    <div id="acww-more"
-        style="background:rgb(202, 129, 174);font:normal 13px/1 Helvetica, Arial, Verdana, Sans-serif;padding:10px 0;color:rgb(228, 26, 26);text-align:center;width:100%;clear:both;margin:0;clear:both;float:left;">
-        <a style="background:#333;color:#FFF;text-decoration:none;border-bottom:1px dotted #ccc;"
-            href="https://usmortgagecalculator.org/" title="Mortgage Calculator" rel="nofollow"
-            target="_blank"></a></div>
-</div>
-<!-- Amortization Calculator Widget END -->
-            
+    <div style="width:960px; position:relative;"><iframe
+            src="https://www.mortgagecalculator.net/embeddable/v2/?size=1&textColor=000000&backgroundColor=eadaed"
+            width="100%" frameborder=0 scrolling=no height=330></iframe><a
+            style="width: 100%;background: #075269;color: #fff;text-align: center;font-weight: bold;display: block;clear: both;padding: 3px 0;font-size: 12px;text-transform: uppercase;font-family: arial;text-decoration: none; cursor:pointer;margin-top:-26px; position:absolute;"
+            href="https://www.mortgagecalculator.net">Powered By www.MortgageCalculator.net</a></div>
 </section>
-<section class="about" >
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="300ms">
-                <p class="text-pink font-weight-200 font-20">Basic Info about company</p>
-                <h1 class="main-font font-weight-600 text-white">Corporate Design<span>and Media Agency</span> <span> in
-                        NewYork</span></h1>
-            </div>
 
-            <div class="col-12 col-lg-6 m-ipad wow fadeInRight" data-wow-delay="300ms">
-                <div class="ml-md-4 pl-md-2 font-weight-200 text-grey font-18">
-                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
-                        vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor
-                        justo sed mi finibus, vel tristique risus faucibus. </p>
-                    <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc
-                        vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
-                </div>
-            </div>
-        </div>
-        <!-- About Boxes -->
-        <div class="row about-margin">
-            <div class="col-12 text-center">
-                <p class="text-pink font-weight-200 font-20">Ready to talk to us?</p>
-                <h1 class="main-font font-weight-600 text-white">The Process Is Simple.</h1>
-
-            </div>
-            <!-- First Box -->
-            <div class="col-md-4 col-sm-12">
-                <div class="about-box center-block bg-green wow zoomIn" data-wow-delay="400ms">
-                    <div class="about-main-icon pb-4">
-
-                        <i class="fas fa-phone-volume" aria-hidden="true"></i>
-                    </div>
-                    <h5>Phone call or Zoom meeting<span> </span></h5>
-                </div>
-            </div>
-            <!-- Second Box -->
-            <div class="col-md-4 col-sm-12">
-                <div class="about-box center-block bg-blue wow zoomIn" data-wow-delay="500ms">
-                    <div class="about-main-icon pb-4">
-
-                        <i class="fas fa-edit" aria-hidden="true"></i>
-                    </div>
-                    <h5>Fill out an application <span></span></h5>
-                    <a href="#contact" class="mt-3 btn btn-medium btn-rounded btn-pink">Contact Us</a>
-                </div>
-            </div>
-            <!-- Third Box -->
-            <div class="col-md-4 col-sm-12">
-                <div class="about-box center-block bg-green wow zoomIn" data-wow-delay="600ms">
-                    <div class="about-main-icon pb-4">
-
-                        <i class="fas fa-smile-wink" aria-hidden="true"></i>
-                    </div>
-                    <h5>Then leave the rest to <span> me!</span></h5>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- About Image -->
-        <!-- <div class="d-flex justify-content-center wow bounceInLeft" data-wow-delay="300ms">
-            <img src="corporate-agency/images/about-img.png" alt="About-Us">
-        </div> -->
-    </div>
-</section>
 <!-- END PRICE -->
 <!-- START TEAM STATS -->
-<!-- <section class="half-section p-0 stats-bg">
+<section class="half-section p-0 stats-bg">
     <h2 class="d-none">heading</h2>
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 p-0 order-1 order-md-2">
-                <div class="owl-carousel owl-theme owl-split"> -->
+                <div class="owl-carousel owl-theme owl-split">
                     <!-- Team-1 -->
-                    <!-- <div class="item">
+                    <div class="item">
                         <div class="hover-effect">
                             <img alt="blog" src="corporate-agency/images/team-img1.jpg" class="team-img">
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Team-2 -->
-                    <!-- <div class="item">
+                    <div class="item">
                         <div class="hover-effect">
                             <img alt="blog" src="corporate-agency/images/team-img2.jpg" class="team-img">
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Team-3 -->
-                    <!-- <div class="item">
+                    <div class="item">
                         <div class="hover-effect">
                             <img alt="blog" src="corporate-agency/images/team-img3.jpg" class="team-img">
                         </div>
@@ -728,36 +712,36 @@
                         <p class="font-weight-200 text-pink font-20">Check Our Skills</p>
                         <h2 class="margin-top main-font font-40 font-weight-normal text-white">We have best Creative <span class="d-block mt-1">skilled team.</span></h2>
                     </div>
-                    <ul class="text-left"> -->
+                    <ul class="text-left">
                         <!-- First Bar -->
-                        <!-- <li class="custom-progress text-white">
-                            <h6 class="font-16 mb-0 text-capitalize">Business Consulting <span class="float-right"><b class="numscroller">85</b>%</span></h6> -->
+                        <li class="custom-progress text-white">
+                            <h6 class="font-16 mb-0 text-capitalize">Business Consulting <span class="float-right"><b class="numscroller">85</b>%</span></h6>
 
-                            <!-- <div class="progress">
+                            <div class="progress">
                                 <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
-                        </li> -->
+                        </li>
                         <!-- Second Bar -->
-                        <!-- <li class="custom-progress text-white">
+                        <li class="custom-progress text-white">
                             <h6 class="font-16 mb-0 text-capitalize">Financial Advising<span class="float-right"><b class="numscroller">68</b>%</span></h6>
 
                             <div class="progress">
                                 <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
-                        </li> -->
+                        </li>
                         <!-- Third Bar -->
-                        <!-- <li class="custom-progress text-white">
+                        <li class="custom-progress text-white">
                             <h6 class="font-16 mb-0 text-capitalize">Brand Consulting <span class="float-right"><b class="numscroller">85</b>%</span></h6>
 
                             <div class="progress">
                                 <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                                 </div>
                             </div>
-                        </li> -->
+                        </li>
                         <!-- Fourth Bar -->
-                        <!-- <li class="custom-progress mb-0 text-white">
+                        <li class="custom-progress mb-0 text-white">
                             <h6 class="font-16 mb-0">Strategic Consulting<span class="float-right"><b class="numscroller">95</b>%</span></h6>
 
                             <div class="progress">
@@ -770,7 +754,7 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <!-- END TEAM STATS -->
 
 <!-- START PORTFOLIO -->
@@ -904,14 +888,14 @@
         </div>
     </div>  -->
     <!-- END CLIENTS -->
-<!-- </section> -->
+</section>
 <!-- END PORTFOLIO -->
 
 
 
 
 <!-- START BLOG -->
-<section class="half-section p-0 blog blog-bg" id="aboutus">
+<section class="half-section p-0 blog blog-bg" id="blog">
     <h2 class="d-none">heading</h2>
     <div class="container-fluid">
         <div class="row align-items-center blog-bg">
@@ -947,38 +931,31 @@
                         <a href="corporate-agency/blog.html" class="mt-3 btn btn-medium btn-rounded btn-pink">Read Blog</a>
                     </div>
                 </div>
-                
             </div>
-            
         </div>
-        
     </div>
-    
 </section>
-
 <!-- END BLOG -->
-
-<!-- <div class="owl-carousel partners-slider"> -->
+<div class="owl-carousel partners-slider">
     
     <!-- Item -->
-    <!-- <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-1.png"></div> -->
+    <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-1.png"></div>
     <!--Item-->
-    <!-- <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-2.png"></div> -->
+    <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-2.png"></div>
     <!--Item-->
-    <!-- <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-3.png"></div> -->
+    <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-3.png"></div>
     <!--Item-->
-    <!-- <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-4.png"></div> -->
+    <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-4.png"></div>
     <!--Item-->
-    <!-- <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-5.png"></div> -->
+    <div class="logo-item"><img alt="client-logo" src="corporate-agency/images/client-5x.png"></div>
     
-<!-- </div>  -->
+</div> 
 
 <!-- START PARALLAX -->
-<section class="parallax-img parallax" id="clients">
+<section class="parallax-img parallax">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3 my-3">
-                <h1 class="main-font font-weight-600 text-white margin-top" style="text-align:center;">Our Satisfied Customers</h1>
                 <!-- Testimonial Slider -->
                 <div id="testimonial-carousal" class="owl-carousel owl-theme testimonial-owl text-center wow fadeIn"
                     data-wow-delay="300ms">
@@ -1045,115 +1022,6 @@
 <!-- START CONTACT-FORM -->
 <section id="contact" class="contact-sec">
     <div class="container">
-        <dl class="faq faq-bg" id="FAQ">
-            <h1 class="main-font font-weight-600 text-white" style="text-align: center;">FAQ</h1>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq1_desc" class="text-white">
-                    What is a "Low Ratio" and a "High Ratio" mortgage?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq1_desc" class="desc">
-                    Conventional - 'Low Ratio' - The Mortgage loan amount is equal or less than 80% of the market value of the home.  In other words, you have a down payment of 20% or more.<br>
-                    Insured - 'High Ratio - The mortgage loan amount is greater than 80% but less than 95% of the market value of the home.  In other words, you have less than 20% of a down payment.  High ratio mortgages can be insured by Genworth Financial Canada, a private insurer, or Canada Mortgage and Housing Corporation (CMHC), which operate under the National Housing Act (NHA).
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq2_desc" class="text-white">
-                    Can I pre-arrange my mortgage?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq2_desc" class="desc">
-                    Based on your financial situation, we can provide you with a Pre-approval Certificate that pre-qualifies you for a maximum amount of mortgage financing at a gurantee interest rate for 120 days* from the certificate date.  Subject to change.*
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq3_desc" class="text-white">
-                    What will my mortgage cost be per month?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq3_desc" class="desc">
-                    You can use our <a href="#calc"><strong>Mortgage Calculator</strong></a> to determine approximate monthly payments.
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq4_desc"class="text-white">
-                    Can I increase the amount of my existing mortgage during the term and avoid any penalty?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq4_desc" class="desc">
-                    Yes.  When you wish to increase the amount of your mortgage to obtain additional funds or buy another property in Canada most lenders can provide you with a "blended fixed rate".  This rate is a blend of your existing mortgage rate and the fixed mortgage rate applicable to the additional funds requested.  No interest penalty will be charge but the resulting term of the mortgage must be equal or greater than the remaining term on your existing mortgage.  If you have a variable rate mortgage we can also provide additional funds; however, rate blending is not available and a modest interest penalty may apply.
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq5_desc" class="text-white">
-                    Can I take my mortgage with me when I move?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq5_desc" class="desc">
-                    Yes.  Subject to credit approval, when you move from one home to another in Canada, you may be able to take your existing mortgage balance with you, at the same interest rate, for the remaining term.  Alternatively, you may be able to combine your existing mortgage balance with additional financing at a blended rate to finance a new home (applicable to fixed rate mortgage only).  No interest penalty is charged.
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq6_desc" class="text-white">
-                    Can I switch my mortgage from current lender to another?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq6_desc" class="desc">
-                    Yes, if you already have a residential first mortgage on your home in Canada with another approved lender, we can help you switch to on our preferred lenders for the best possible interest rates.  Certain conditions may apply and prepayment penalties or other costs may be charged by our current lender.
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq7_desc" class="text-white">
-                  When is mortgage insurance required?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq7_desc" class="desc">
-                If the amount of the mortgage exceeds 80% of the lending value of the mortgaged property, the mortgage is considered  "high ratio".  Accordingly, and as required by law, mortgage insurance must be purchased for the full amount of the mortgage.  Mortgage insurance is available from CMHC and Genworth.  An application fee and an insurance premium ( which can be added to the mortgage amount) are payable to the insurer.
-                </p>
-            </dd>
-            <dt>
-                <button aria-expanded="false" aria-controls="faq8_desc" class="text-white">
-                  What should I budget for a home purchase?
-                </button>
-            </dt>
-            <dd>
-                <p id="faq8_desc" class="desc">
-                    Before making a home-buying decision, calculate both the one-time and ongoing costs associated with buying and
-                    maintaining the home you want.<br><br>
-                    <strong>One-time costs may include:</strong><br>
-                    Appraisal fees<br>
-                    Land transfer taxes<br>
-                    CMHC/GENWORTH mortgage insurance application fee and insurance premium (if applicable) - may be added to the mortgage amount.<br>
-                    Moving expenses <br>
-                    Legal fees <br>
-                    Property and School Tax adjustment<br>
-                    Heating, Hydro and Water Adjustment<br>
-                    Title Insurance<br>
-                    Utility Connections <br>
-                    Home Inspection Fee, if necessary<br><br>
-                    <strong>Ongoing housing costs include:</strong><br>
-                    Mortgage payments<br>
-                    Home Insurance <br>
-                    Property taxes<br>
-                    Utilities<br>
-                    Condominium fees (if applicable)<br>
-                    Your lawyer and real estate agent can provide estimates of some of these costs and should consult with you before you sign any documents or make any commitments.
-
-                
-
-                </p>
-            </dd>
-        </dl>
-        <br>
-        <br>
-        <br>
         <!--Heading-->
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 text-center">
@@ -1268,7 +1136,7 @@
                     </ul>
                 </div>
                 <!--Text-->
-                <p class="company-about fadeIn text-white">© 2020 JLM Mortgage Solutions. Powered by Pega Pegasus Mortgage and Financial Solution| Brokers Lic 11479.  Made With Love By <a href="javascript:void(0);">Sojast Design</a></p>
+                <p class="company-about fadeIn text-white">© 2020 MegaOne. Made With Love By <a href="javascript:void(0);">Themesindustry</a></p>
             </div>
         </div>
     </div>
@@ -1311,6 +1179,12 @@
 <script src="corporate-agency/js/jquery.hoverdir.js"></script>
 <!-- custom script -->
 <script src="vendor/js/contact_us.js"></script>
+    <!----START SLIDER SCRIPTS--->
 <script src="corporate-agency/js/script.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+  <script>
+    new BeerSlider(document.getElementById('slider'),{start:20});
+  
+  </script>
 </body>
 </html>
