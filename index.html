@@ -365,7 +365,11 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 p-0 ">
+
+                <div id="slider1" class="beer-slider d-flex flex-grow-1" data-beer-start="20" data-beer-label="before">
+
                 <div id="slider2" class="beer-slider d-flex flex-grow-1" data-beer-start="20" data-beer-label="before">
+
                   <img src="corporate-agency/images/blog-img1.png" class="custom-img" alt="first">
                         <div class="beer-reveal" data-beer-label="after">
                           <img src="corporate-agency/images/blog-img2.png" class="custom-img" alt="after">
@@ -376,6 +380,39 @@
         
     </div>
 </div>    
+
+
+
+
+<h2 class="d-none">heading</h2>
+<div class="container-fluid">
+        <div class="row align-items-center blog-bg">           
+          <div class="col-lg-6 col-md-12 p-0">
+                <div class="align-items-center pc-0 px-md-5 skill-box">
+                    <div class="main-title mb-5 text-center text-lg-left wow fadeIn" data-wow-delay="300ms">
+                        <p class="text-pink font-weight-200 font-20">News & Blogs</p>
+                        <h1 class="main-font font-weight-600 text-white margin-top">Your Design Guide</h1>
+                        <p class="font-15 alt-font font-weight-normal text-grey margin-top">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut
+                            aliquip.</p>
+                        <a href="corporate-agency/blog.html" class="mt-3 btn btn-medium btn-rounded btn-pink">Read
+                            Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 p-0 ">
+                <div id="slider2" class="beer-slider d-flex flex-grow-1" data-beer-start="20" data-beer-label="before">
+                  <img src="corporate-agency/images/rent.png" class="custom-img" alt="first">
+                        <div class="beer-reveal" data-beer-label="after">
+                          <img src="corporate-agency/images/sold.png" class="custom-img" alt="after">
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>   
 </section>
 <section class="about" id="about">
     <div class="container">
@@ -1077,6 +1114,9 @@
 <script src="corporate-agency/js/script.js"></script>
     <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
   <script>
+
+   const beer1 = new BeerSlider(document.getElementById('slider1'),{start:20});
+   const beer2 = new BeerSlider(document.getElementById('slider2'),{start:20})
     const beer1 = new BeerSlider(document.getElementById('slider1'),{start:20});
     const beer2 = new BeerSlider(document.getElementById('slider2'),{start:20})
   
