@@ -303,12 +303,21 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 p-0 ">
+                <div id="slider1" class="beer-slider d-flex flex-grow-1" data-beer-start="20" data-beer-label="before">
+                  <img src="corporate-agency/images/rent.png" class="custom-img" alt="first">
+                        <div class="beer-reveal" data-beer-label="after">
+                          <img src="corporate-agency/images/sold.png" class="custom-img" alt="after">
+
                 <div class="col-lg-6 col-md-12 p-0 ">
                     <div id="slider" class="beer-slider d-flex flex-grow-1" data-beer-start="20"
                         data-beer-label="before">
                         <img src="corporate-agency/images/rent.png" class="custom-img" alt="first">
                         <div class="beer-reveal" data-beer-label="after">
                             <img src="corporate-agency/images/sold.png" class="custom-img" alt="after">
+
                         </div>
                     </div>
                 </div>
@@ -336,6 +345,44 @@
         </div>
     </section>
     <!--END ANSWER TO NEW MORTGAGE-->
+
+
+<h2 class="d-none">heading</h2>
+<div class="container-fluid">
+        <div class="row align-items-center blog-bg">           
+          <div class="col-lg-6 col-md-12 p-0">
+                <div class="align-items-center pc-0 px-md-5 skill-box">
+                    <div class="main-title mb-5 text-center text-lg-left wow fadeIn" data-wow-delay="300ms">
+                        <p class="text-pink font-weight-200 font-20">News & Blogs</p>
+                        <h1 class="main-font font-weight-600 text-white margin-top">Your Design Guide</h1>
+                        <p class="font-15 alt-font font-weight-normal text-grey margin-top">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut
+                            aliquip.</p>
+                        <a href="corporate-agency/blog.html" class="mt-3 btn btn-medium btn-rounded btn-pink">Read
+                            Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 p-0 ">
+                <div id="slider2" class="beer-slider d-flex flex-grow-1" data-beer-start="20" data-beer-label="before">
+                  <img src="corporate-agency/images/blog-img1.png" class="custom-img" alt="first">
+                        <div class="beer-reveal" data-beer-label="after">
+                          <img src="corporate-agency/images/blog-img2.png" class="custom-img" alt="after">
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>    
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="300ms">
+                <p class="text-pink font-weight-200 font-20">Basic Info about company</p>
+                <h1 class="main-font font-weight-600 text-white">Corporate Design<span>and Media Agency</span> <span> in NewYork</span></h1>
 
     <!--START REFINANCE-->
     <section class="half-section p-0 blog blog-bg" id="blog">
@@ -392,6 +439,7 @@
                         <span> in
                             NewYork</span></h1>
                 </div>
+
             </div>
 
         </div>
@@ -991,5 +1039,48 @@
     new BeerSlider(document.getElementById('slider'), { start: 20 });
 
 </script>
+
+
+<!-- JavaScript -->
+<script src="vendor/js/bundle.min.js"></script>
+<!-- Plugin Js -->
+<script src="vendor/js/jquery.appear.js"></script>
+<script src="vendor/js/jquery.fancybox.min.js"></script>
+<script src="vendor/js/owl.carousel.min.js"></script>
+<script src="vendor/js/parallaxie.min.js"></script>
+<script src="vendor/js/wow.min.js"></script>
+<script src="vendor/js/jquery.cubeportfolio.min.js"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="vendor/js/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="vendor/js/morphext.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
+<!-- Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4fusEY9kSwNHgtK8KOgyoTsyP5Tb2NXo"></script>
+<script src="corporate-agency/js/map.js"></script>
+<!-- CUSTOM JS -->
+<script src="corporate-agency/js/isotope.pkgd.js"></script>
+<script src="corporate-agency/js/modernizr.custom.97074.js"></script>
+<script src="corporate-agency/js/jquery.hoverdir.js"></script>
+<!-- custom script -->
+<script src="vendor/js/contact_us.js"></script>
+    <!----START SLIDER SCRIPTS--->
+<script src="corporate-agency/js/script.js"></script>
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+  <script>
+    const beer1 = new BeerSlider(document.getElementById('slider1'),{start:20});
+    const beer2 = new BeerSlider(document.getElementById('slider2'),{start:20})
+  
+  </script>
+</body>
 
 </html>
